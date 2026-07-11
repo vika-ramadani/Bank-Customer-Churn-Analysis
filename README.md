@@ -24,11 +24,18 @@ Proses pembersihan data yang dilakukan meliputi :
 Analisis eksploratif dilakukan untuk memahami karakteristik customer churn melalui beberapa fokus analisis berikut.
 ### 1. Gambaran Umum Customer Churn
 Pertanyaan analisis : Berapa persentase nasabah yang mengalami churn?
+<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/7df5f27c-18cc-43ea-80a6-1c11692962a3" />
+Hasil menunjukkan bahwa sebanyak 20% nasabah churn(keluar) dan 80% lainnya masih menjadi pelanggan, hal ini mengindikasikan bahwa persentase nasabah masih banyak 
 ### 2. Karakteristik Demografis Nasabah
 Pertanyaan analisis :
 * Negara mana yang memiliki churn tertinggi?
+<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/2cf33597-7882-4e29-8cc0-8cb731632300" />
+
 * Apakah terdapat perbedaan churn antara laki-laki dan perempuan?
+<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/432e02f9-e98a-4462-a1a5-06502153be0a" />
+
 * Kelompok usia mana yang memiliki churn rate tertinggi?
+
 ### 3. Karakteristik Finansial Nasabah
 Pertanyaan analisis:
 * Apakah nasabah dengan saldo tertentu memiliki churn lebih tinggi?
