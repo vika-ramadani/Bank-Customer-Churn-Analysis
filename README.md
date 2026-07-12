@@ -24,31 +24,47 @@ Proses pembersihan data yang dilakukan meliputi :
 Analisis eksploratif dilakukan untuk memahami karakteristik customer churn melalui beberapa fokus analisis berikut.
 ### 1. Gambaran Umum Customer Churn
 Pertanyaan analisis : Berapa persentase nasabah yang mengalami churn?
-<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/7df5f27c-18cc-43ea-80a6-1c11692962a3" />
-Hasil menunjukkan bahwa sebanyak 20% nasabah churn(keluar) dan 80% lainnya masih menjadi pelanggan, hal ini mengindikasikan bahwa persentase nasabah masih banyak 
+  <img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/7df5f27c-18cc-43ea-80a6-1c11692962a3" />
+
+Hasil menunjukkan bahwa sebanyak 20% (2.037 nasabah) dari total 10.000 berhenti berlangganan. Hal ini mengindikasikan bahwa retensi nasabah bank cukup serius, karena angka ini sudah diatas rata-rata industri perbankan (umumnya dibawah 15%). Tentunya hal ini mengindikasikan adanya potensi penurunan likuiditas (kekurangan uang kas) dan pembengkakan biaya akuisisi(mencari nasabah baru).
+
 ### 2. Karakteristik Demografis Nasabah
 Pertanyaan analisis :
 * Negara mana yang memiliki churn tertinggi?
-<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/2cf33597-7882-4e29-8cc0-8cb731632300" />
-
+  <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/2cf33597-7882-4e29-8cc0-8cb731632300" />
+Berdasarkan hasil 
 * Apakah terdapat perbedaan churn antara laki-laki dan perempuan?
-<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/432e02f9-e98a-4462-a1a5-06502153be0a" />
+  <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/432e02f9-e98a-4462-a1a5-06502153be0a" />
 
 * Kelompok usia mana yang memiliki churn rate tertinggi?
+  <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/6fb5eee7-1a7c-480d-aaf1-a39633160709" />
 
 ### 3. Karakteristik Finansial Nasabah
 Pertanyaan analisis:
 * Apakah nasabah dengan saldo tertentu memiliki churn lebih tinggi?
+  <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/f82f4998-15c6-4fab-8a76-c8393bc8fc46" />
+  
 * Bagaimana hubungan credit score dengan churn?
-* Apakah estimated salary menunjukkan pola tertentu terhadap churn?
+  <img width="600" height="400" alt="image" src="https://github.com/user-attachments/assets/65771bc0-69a5-4fd5-bf9c-5c4d1b164297" />
+
 ### 4. Hubungan Nasabah dengan Bank
 Pertanyaan analisis:
 * Apakah lama menjadi nasabah berkaitan dengan churn?
+  <img width="1233" height="350" alt="image" src="https://github.com/user-attachments/assets/e34aa2fe-00f7-4299-8ede-3a11dc245ce7" />
+
 * Apakah jumlah produk yang dimiliki memengaruhi churn?
+  <img width="1180" height="358" alt="image" src="https://github.com/user-attachments/assets/0e94262b-cdf0-417f-a47c-de43bd5d889e" />
+
 * Apakah kepemilikan kartu kredit berkaitan dengan churn?
+  <img width="1179" height="365" alt="image" src="https://github.com/user-attachments/assets/9e341a1a-fe9c-4f9f-9646-6c69b2f6d68c" />
+
 * Apakah nasabah yang tidak aktif memiliki churn rate lebih tinggi?
+  <img width="1232" height="362" alt="image" src="https://github.com/user-attachments/assets/c1cbc04b-6a3a-4124-aaa2-e985a0d575ca" />
+  
 ### 5. Identifikasi Segmen Beresiko Tinggi
-Pertanyaan analisis: Segmen nasabah mana yang memiliki tingkat churn tertinggi?
+Pertanyaan analisis: 
+* Segmen nasabah mana yang memiliki tingkat churn tertinggi?
+  <img width="928" height="599" alt="image" src="https://github.com/user-attachments/assets/1a1ce03f-b648-4aaf-8fb4-3db061b60bf9" />
 
 ## Dashboard
 ## Insight Utama
