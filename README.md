@@ -26,15 +26,18 @@ Analisis eksploratif dilakukan untuk memahami karakteristik customer churn melal
 Pertanyaan analisis : Berapa persentase nasabah yang mengalami churn?
   <img width="500" height="250" alt="image" src="https://github.com/user-attachments/assets/7df5f27c-18cc-43ea-80a6-1c11692962a3" />
 
-Hasil menunjukkan bahwa sebanyak 20% (2.037 nasabah) dari total 10.000 berhenti berlangganan. Hal ini mengindikasikan bahwa retensi nasabah bank cukup serius, karena angka ini sudah diatas rata-rata industri perbankan (umumnya dibawah 15%). Tentunya hal ini mengindikasikan adanya potensi penurunan likuiditas (kekurangan uang kas) dan pembengkakan biaya akuisisi(mencari nasabah baru).
+Hasil menunjukkan bahwa sebanyak 20% (2.037 nasabah) dari total 10.000 berhenti berlangganan. Persentase churn ini cukup serius, karena angka ini sudah diatas rata-rata industri perbankan (umumnya dibawah 15%). Tentunya hal ini mengindikasikan adanya potensi penurunan likuiditas (kekurangan uang kas) dan pembengkakan biaya akuisisi(mencari nasabah baru) bagi bank.
 
 ### 2. Karakteristik Demografis Nasabah
 Pertanyaan analisis :
 * Negara mana yang memiliki churn tertinggi?
-  <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/2cf33597-7882-4e29-8cc0-8cb731632300" />
-Berdasarkan hasil 
+  <img width="1177" height="395" alt="image" src="https://github.com/user-attachments/assets/47bb6ffe-0b15-4666-ae7d-d4431e482996" />
+
+Jika ditinjau berdasarkan rasio tingkat kehilangan nasabah (jumlah nasabah churn dibagi dengan total keseluruhan nasabah) di masing-masing wilayah/negara, hasil menunjukkan bahwa **negara Jerman mendominasi dengan tingkat persentase churn nasabah yang tinggi yaitu 32%** hampir 2 kali lipat dibandingkan Prancis (16%) dan Spanyol (17%). Hal ini mengindikasikan bahwa adanya masalah operasional, kualitas layanan, atau ketatnya kompetisi perbankan khusus wilayah Jerman. Oleh karena itu, wilayah Jerman membutuhkan perhatian ketat untuk merancang strategi baru guna meningkatkan retensi pelanggan.
+
 * Apakah terdapat perbedaan churn antara laki-laki dan perempuan?
-  <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/432e02f9-e98a-4462-a1a5-06502153be0a" />
+  <img width="1152" height="598" alt="image" src="https://github.com/user-attachments/assets/e6705bed-b74b-4532-8983-5cf105a14210" />
+
 
 * Kelompok usia mana yang memiliki churn rate tertinggi?
   <img width="600" height="350" alt="image" src="https://github.com/user-attachments/assets/6fb5eee7-1a7c-480d-aaf1-a39633160709" />
