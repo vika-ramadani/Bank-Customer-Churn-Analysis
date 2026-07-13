@@ -95,7 +95,7 @@ Pertanyaan analisis:
   <img width="1331" height="442" alt="image" src="https://github.com/user-attachments/assets/17ba324a-e56c-4d4d-9a31-ea0d0fad416b" />
   _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_.
   
-  Berdasarkan hasil analisis, nasabah yang memiliki 3 dan 4 produk menunjukkan churn rate yang jauh lebih tinggi dibandingkan nasabah dengan 1 atau 2 produk. Churn rate pada kelompok 3 produk mencapai 83%, sedangkan seluruh nasabah pada kelompok 4 produk dalam dataset ini tercatat mengalami churn (100%). Nasabah dengan 2 produk menunjukkan tingkat retensi terbaik dengan churn rate hanya 8%, sedangkan churn meningkat tajam pada kelompok yang memiliki 3–4 produk.
+  Nasabah dengan 4 produk memiliki churn rate sebesar 100%. Namun, kelompok ini hanya terdiri dari 60 nasabah sehingga ukuran sampelnya relatif kecil. Oleh karena itu, temuan ini perlu diinterpretasikan secara hati-hati. Sebaliknya, kelompok dengan 3 produk memiliki churn rate tinggi (83%) dengan jumlah nasabah yang lebih besar (266), sehingga pola tersebut lebih layak dijadikan perhatian. Nasabah dengan 2 produk menunjukkan tingkat retensi terbaik dengan churn rate hanya 8%, sedangkan churn meningkat tajam pada kelompok yang memiliki 3–4 produk.
 
 * Apakah kepemilikan kartu kredit berkaitan dengan churn?
   <img width="1426" height="421" alt="image" src="https://github.com/user-attachments/assets/fc047dc1-bdbd-473d-8744-cc46d7e4c791" />
@@ -123,6 +123,8 @@ Pertanyaan analisis:
 Smentara itu, kepemilikan 3 produk menunjukkan keterkaitan dengan churn rate yang sangat tinggi, terutama pada nasabah yang sudah tidak aktif.
 
 ## Dashboard
+<img width="1095" height="708" alt="image" src="https://github.com/user-attachments/assets/a70e9d8a-22fb-46bd-a4b0-064c6640f648" />
+
 ## Insight Utama
 Berdasarkan seluruh hasil analisis,  diperoleh beberapa karakteristik yang paling sering muncul pada segmen nasabah dengan churn rate tinggi, yaitu:
 1. Berasal dari Germany.
