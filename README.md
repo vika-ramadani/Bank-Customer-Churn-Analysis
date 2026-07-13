@@ -1,24 +1,24 @@
 # Analisis Customer Churn Bank
 ## Gambaran Proyek:
-Bank mengalami kehilangan nasabah (customer churn) yang dapat berdampak pada penurunan pendapatan dan loyalitas pelanggan. Namun, belum diketahui karakteristik nasabah yang paling beresiko churn serta faktor-faktor apa saja yang berkaitan dengan keputusan nasabah untuk meninggalkan bank. Oleh karena itu, diperlukan analisis data untuk mengidentifikasi pola churn sehingga bank dapat menyusun strategi retensi pelanggan yang lebih efektif.
+Customer churn merupakan tantangan bagi industri perbankan karena dapat mengurangi pendapatan serta meningkatkan biaya untuk memperoleh nasabah baru. Namun, bank belum mengetahui karakteristik nasabah yang memiliki kecenderungan churn maupun faktor-faktor yang berkaitan dengan keputusan tersebut. Oleh karena itu, dilakukan analisis data untuk mengidentifikasi pola churn sehingga dapat menjadi dasar dalam menyusun strategi retensi pelanggan yang lebih efektif.
 ## Permasalahan Bisnis: 
 Bank mengalami customer churn dan ingin memahami karakteristik nasabah yang cenderung churn.
 ## Tujuan Analisis:
 Mengidentifikasi faktor-faktor yang berkaitan dengan customer churn dan karakteristik nasabah yang memiliki resiko churn lebih tinggi.
 ## Dataset:
 Dataset yang digunakan adalah **Bank Customer Churn Dataset** yang diperoleh dari [Kaggle](https://www.kaggle.com/datasets/shantanudhakadd/bank-customer-churn-prediction/data). Dataset terdiri dari **10000 baris** nasabah dengan **14 kolom**/variabel, meliputi informasi demografis, profil keuangan, aktivitas nasabah, serta status churn(Excited). Variabel-variabel tersebut digunakan untuk menganalisi karakteristik nasabah yang berkaitan dengan customer churn.
-<img width="900" height="400" alt="image" src="https://github.com/user-attachments/assets/680c756a-19e8-40c8-aba8-73f6081df2b7" />
+<img width="1916" height="815" alt="image" src="https://github.com/user-attachments/assets/c43e8177-d557-4b67-847f-9b50549c5b3d" />
 
 ## Data Cleaning:
 Proses pembersihan data yang dilakukan meliputi :
 1. Missing Value : Tidak ditemukan missing value pada seluruh kolom.
-3. Invalid Value : Tidak ditemukan nilai di luar nilai asli masing-masing variabel.
+3. Invalid Value : Seluruh nilai berada dalam rentang yang valid sesuai dengan karakteristik masing-masing variabel.
 4. Duplicate Data : Tidak ditemukan data duplikat berdasarkan 'CustomerId'.
 5. Inaccurate Value : Tidak ditemukan indikasi nilai yang tidak akurat.
 6. Inconsistent Value : Tidak ditemukan inkonsistensi penulisan pada variabel kategorikal.
-7. Outlier : Ditemukan beberapa outlier berdasarkan metode IQR pada beberapa variabel, namun tetap dipertahankan karena masih valid secara bisnis.
+7. Outlier : Ditemukan beberapa nilai outlier berdasarkan metode **Interquartile Range (IQR)**. Nilai tersebut tetap dipertahankan karena masih berada dalam rentang yang wajar dan merepresentasikan kondisi bisnis yang mungkin terjadi.
 8. Tipe Data : Semua tipe data sesuai dengan karakteristik masing-masing variabel.
-9. Format: Tidak diperlukan perubahan format data.
+9. Format: Tidak diperlukan perubahan format data karena seluruh data telah memiliki format yang konsisten..
 
 ## Data Transformasi
 Sebelum melakukan Exploratory Data Analysis (EDA), dilakukan proses transformasi data (data binning) untuk mengelompokkan beberapa variabel numerik menjadi data kategorikal agar pola analisis lebih mudah diidentifikasi. Kolom baru yang ditambahkan meliputi:
