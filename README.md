@@ -22,22 +22,22 @@ Proses pembersihan data yang dilakukan meliputi :
 
 ## Data Transformasi
 Sebelum melakukan Exploratory Data Analysis (EDA), dilakukan proses transformasi data (data binning) untuk mengelompokkan beberapa variabel numerik menjadi data kategorikal agar pola analisis lebih mudah diidentifikasi. Kolom baru yang ditambahkan meliputi:
-- **BalanceGroup**  
-  Mengelompokkan saldo nasabah ke dalam beberapa kategori berdasarkan nominal saldo, yaitu:
-  - Tidak Ada Saldo (Balance = 0)
-  - Saldo Rendah (≤ 3.000.000)
-  - Saldo Menengah (3.000.001 – 7.000.000)
-  - Saldo Menengah Atas (7.000.001 – 11.000.000)
-  - Saldo Tinggi (11.000.001 – 15.000.000)
-  - Saldo Sangat Tinggi (> 15.000.000)
+1. **BalanceGroup**
+     Mengelompokkan saldo nasabah berdasarkan rentang nominal saldo (business rule) agar mempermudah analisis karakteristik customer churn.
+   * Tidak Ada Saldo (Rp0)
+   * Saldo Rendah (Rp1 – Rp5.000.000)
+   * Saldo Menengah (Rp5.000.001 – Rp10.000.000)
+   * Saldo Tinggi (Rp10.000.001 – Rp15.000.000)
+   * Saldo Sangat Tinggi (Rp15.000.001 – Rp20.000.000)
+   * Saldo Premium (> Rp20.000.000)
 
-- **CreditScoreGroup**  
-  Mengelompokkan skor kredit nasabah berdasarkan tingkat kelayakan finansial, yaitu:
-  - Rendah (≤ 500)
-  - Cukup (501 – 600)
-  - Sedang (601 – 700)
-  - Baik (701 – 800)
-  - Sangat Baik (> 800)
+2. **CreditScoreGroup**
+   Mengelompokkan skor kredit nasabah berdasarkan tingkat kelayakan finansial, yaitu:
+   * Rendah (350 - 500)
+   * Cukup (501 – 600)
+   * Sedang (601 – 700)
+   * Baik (701 – 800)
+   * Sangat Baik (801 - 850)
 
 
 ## Exploratory Data Analysis (EDA):
@@ -51,46 +51,63 @@ Hasil menunjukkan bahwa sebanyak 20% (2.037 nasabah) dari total 10.000 berhenti 
 ### 2. Karakteristik Demografis Nasabah
 Pertanyaan analisis :
 * Negara mana yang memiliki churn tertinggi?
-  <img width="1177" height="395" alt="image" src="https://github.com/user-attachments/assets/47bb6ffe-0b15-4666-ae7d-d4431e482996" />
-Berdasarkan rasio tingkat kehilangan nasabah (jumlah nasabah churn dibagi dengan total keseluruhan nasabah) di masing-masing wilayah/negara, hasil menunjukkan bahwa **negara Jerman mendominasi dengan tingkat persentase churn nasabah yang tinggi yaitu 32%** hampir 2 kali lipat dibandingkan Prancis (16%) dan Spanyol (17%). Hal ini mengindikasikan bahwa adanya masalah operasional, kualitas layanan, atau ketatnya kompetisi perbankan khusus wilayah Jerman. Oleh karena itu, wilayah Jerman membutuhkan perhatian ketat untuk merancang strategi baru guna meningkatkan retensi pelanggan.
+  <img width="1267" height="333" alt="image" src="https://github.com/user-attachments/assets/288f49ec-2964-4213-b2f7-e2c4c9116300" />
+  _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_.
+
+  Berdasarkan rasio tingkat kehilangan nasabah (jumlah nasabah churn dibagi dengan total keseluruhan nasabah) di masing-masing wilayah/negara, hasil menunjukkan bahwa **negara Jerman mendominasi dengan tingkat persentase churn nasabah yang tinggi yaitu 32%** hampir 2 kali lipat dibandingkan Prancis (16%) dan Spanyol (17%). Hal ini mengindikasikan bahwa adanya masalah operasional, kualitas layanan, atau ketatnya kompetisi perbankan khusus wilayah Jerman. Oleh karena itu, wilayah Jerman membutuhkan perhatian ketat untuk merancang strategi baru guna meningkatkan retensi pelanggan.
 
 * Apakah terdapat perbedaan churn antara laki-laki dan perempuan?
-  <img width="859" height="511" alt="image" src="https://github.com/user-attachments/assets/8e4bcf5e-502f-48ea-9ca9-9cf807a755c3" />
+  <img width="1072" height="396" alt="image" src="https://github.com/user-attachments/assets/b2e738ce-34e8-4be8-9356-e915c0ea71fb" />
+  _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_.
+  
   Hasil menunjukkan bahwa gender perempuan (Female) memiliki persentase tingkat kehilangan nasabah yang tinggi yaitu 25% dibanding laki-laki (Male) di angka 16%. Selisih sebesar 9% ini mengindikasikan bahwa adanya perbedaan loyalitas antara nasabah perempuan dan laki-laki, sehingga nasabah perempuan memerlukan pendekatan atau strategi baru tanpa mengabaikan nasabah laki-laki untuk meningkatkan retensi pelanggan. 
 
 * Kelompok usia mana yang memiliki churn rate tertinggi?
-  <img width="978" height="648" alt="image" src="https://github.com/user-attachments/assets/64818877-5361-4b06-b611-6891d6335fd2" />
-  _**Catatan:** Pengelompokan usia (*Age Group*) tidak dibuat sebagai kolom baru pada dataset, melainkan dilakukan langsung menggunakan fitur **Group** pada PivotTable saat proses analisis._
+  <img width="1057" height="701" alt="image" src="https://github.com/user-attachments/assets/f0f58b2a-ba37-4c35-8192-ce44c075cad1" />
+  _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_.
+   _**Catatan:** Pengelompokan usia (*Age Group*) tidak dibuat sebagai kolom baru pada dataset, melainkan dilakukan langsung menggunakan fitur **Group** pada PivotTable saat proses analisis._
   
   Berdasarkan Usia (Age), churn rate tertinggi di dominasi oleh usia 48-57 sebanyak 55% dimana angka ini terbilang sangat tinggi, disusul oleh usia 58-67 sebanyak 40%. Rentang usia ini tergolong dalam kategori usia pra-pensiun hingga awal pensiun, sehingga usia dalam rentang ini (48-67) biasanya menutup rekening bank karena memasuki fase pensiun dengan memusatkan keuangan pada 1 bank saja atau penggunaan aplikasi digital bank yang terlalu rumit. Oleh karena itu, pihak bank dapat merencanakan strategi baru seperti layanan digital yang ramah lansia, optimaliasi layanan bantuan tatap muka atau program tabungan hari tua yang kompetitif.
 
 ### 3. Karakteristik Finansial Nasabah
 Pertanyaan analisis:
 * Apakah nasabah dengan saldo tertentu memiliki churn lebih tinggi?
-  <img width="911" height="628" alt="image" src="https://github.com/user-attachments/assets/4fb26abb-c410-4c3b-9def-f6f8169732f0" />
- Perbandingan antar nasabah yang memiliki saldo cenderung seimbang sehingga tidak memperlihatkan pengaruh churn yang begitu ekstrem, dimana rata-rata nasabah yang memiliki saldo mengalami churn dalam rentang 22% - 26%. Namun, jika dibandingkan dengan nasabah yang sama sekali tidak memiliki saldo (14%), hasil menunjukkan selisih sekitar ~10% yang mengindikasikan bahwa nasabah yang bersaldo cenderung churn dibandingkan nasabah yang tidak memiliki saldo.
+  <img width="1098" height="461" alt="image" src="https://github.com/user-attachments/assets/b7b07bbe-56bf-4489-a1ac-8758d835aa1f" />
+  _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_
+
+  Berdasarkan hasil analisis, kategori saldo menunjukkan perbedaan churn rate, namun tidak membentuk pola yang konsisten. Nasabah dengan saldo rendah dan saldo tinggi sama-sama memiliki churn rate sebesar 26%, sedangkan nasabah tanpa saldo memiliki churn rate paling rendah (14%). Temuan ini mengindikasikan bahwa besarnya saldo rekening saja belum cukup untuk menjelaskan customer churn, sehingga kemungkinan terdapat faktor lain yang memiliki pengaruh lebih besar, seperti usia, status keaktifan, atau jumlah produk yang dimiliki.
   
 * Bagaimana hubungan credit score dengan churn?
-  <img width="1182" height="392" alt="image" src="https://github.com/user-attachments/assets/70cfa6d8-4ff2-4ee1-8cbe-119b4bc01ace" />
+  <img width="1031" height="440" alt="image" src="https://github.com/user-attachments/assets/ee788988-fb95-441b-bdfb-34908e83e875" />
+   _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_.
+  
   Hasil menunjukkan perbandingan yang relatif merata atau tidak terlalu ekstrem antar kategori Skor kredit, dimana rata-rata kategori nasabah churn dalam rentang 20% - 24%, perbandingan selisih antar kategori skor kredit yaitu 4% mengindikasikan bahwa churn dalam kategori skor cenderung sama di setiap tingkatan. Oleh karena itu, dapat disimpulkan bahwa variabel skor kredit tidak begitu berpengaruh terhadap churn pelanggan.
 
 ### 4. Hubungan Nasabah dengan Bank
 Pertanyaan analisis:
 * Apakah lama menjadi nasabah berkaitan dengan churn?
-  <img width="1203" height="331" alt="image" src="https://github.com/user-attachments/assets/08387167-6639-40be-8d1e-2163c49f13ef" />
+  <img width="1594" height="399" alt="image" src="https://github.com/user-attachments/assets/322dfcdb-43ec-476d-8421-3003bfd806dc" />
+   _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_.
+  
   Pengaruh lama menjadi nasabah terhadap churn menunjukkan hasil yang bersifat homogen atau cenderung stabil, perbedaan rentang yang berkisar 17%-23% yang tidak terlalu jauh antar tahun. Meskipun fluktuasinya tipis, terlihat tren positif di mana risiko churn perlahan menurun dari nasabah baru di tahun ke-0 (23%) hingga mencapai titik paling aman pada nasabah tahun ke-7 (17%). Namun, risiko ini terpantau kembali meningkat di tahun ke-9 (22%). Maka dari itu, dapat ditarik kesimpulan bahwa lama menjadi nasabah (Tenure) tidak begitu berpengaruh terhadap loyalitas nasabah.
 
 * Apakah jumlah produk yang dimiliki memengaruhi churn?
   <img width="1331" height="442" alt="image" src="https://github.com/user-attachments/assets/17ba324a-e56c-4d4d-9a31-ea0d0fad416b" />
+  _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_.
+  
   Berdasarkan hasil analisis, nasabah yang memiliki 3 dan 4 produk menunjukkan churn rate yang jauh lebih tinggi dibandingkan nasabah dengan 1 atau 2 produk. Churn rate pada kelompok 3 produk mencapai 83%, sedangkan seluruh nasabah pada kelompok 4 produk dalam dataset ini tercatat mengalami churn (100%). Nasabah dengan 2 produk menunjukkan tingkat retensi terbaik dengan churn rate hanya 8%, sedangkan churn meningkat tajam pada kelompok yang memiliki 3–4 produk.
 
 * Apakah kepemilikan kartu kredit berkaitan dengan churn?
-  <img width="1182" height="348" alt="image" src="https://github.com/user-attachments/assets/74fb4cce-7ac0-4119-b964-a9ff3cd226f2" />
+  <img width="1426" height="421" alt="image" src="https://github.com/user-attachments/assets/fc047dc1-bdbd-473d-8744-cc46d7e4c791" />
+  _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_.
+
   Berdasarkan hubungan churn dengan kepemilikan kartu kredit nasabah, hasil menunjukkan bahwa tidak ada perbedaan yang cukup signifikan antara nasabah yang memiliki kartu kredit(20%) dan yang tidak(21%). Hal ini mengindikasikan bahwa kepemilikan kartu kredit tidak begitu berpengaruh terhadap keputusan nasabah untuk melakukan churn. Tentunya kepemilikan kartu ini belum juga mampu membuat nasabah bertahan.
 
 
 * Apakah nasabah yang tidak aktif memiliki churn rate lebih tinggi?
-  <img width="1123" height="303" alt="image" src="https://github.com/user-attachments/assets/a3e5d938-2441-4142-8379-3bb9bb971824" />
+  <img width="1366" height="402" alt="image" src="https://github.com/user-attachments/assets/7b174d7d-e8bd-4e5e-80e0-4b8f7559630f" />
+   _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_.
+  
   Tingkat keaktifan nasabah memiliki korelasi yang kuat terhadap keputusan meninggalkan bank. Hasil menunjukkan bahwa nasabah yang tidak aktif memiliki churn rate sebesar 27%, hampir dua kali lipat dibanding nasabah yang aktif (14%). Hal ini mengindikasikan bahwa status ketidakaktifan nasabah berpengaruh terhadap penurunan loyalitas nasabah. Oleh karena itu, bank dapat memantau keaktifan nasabah untuk mendeteksi nasabah pasif agar dapat melakukan tindakan penyelamatan sebelum churn terjadi.
   
 ### 5. Segmentasi Nasabah
@@ -113,13 +130,14 @@ Berdasarkan seluruh hasil analisis,  diperoleh beberapa karakteristik yang palin
 3. Didominasi oleh perempuan.
 4. Berstatus tidak aktif (Inactive Member).
 5. Memiliki 3 produk perbankan.
+
 Karakteristik tersebut dapat dijadikan dasar bagi bank untuk mengidentifikasi kelompok nasabah yang perlu diprioritaskan dalam program retensi pelanggan.
 
 ## Rekomendasi Bisnis
 1. Prioritaskan program retensi pada nasabah di Germany, khususnya perempuan berusia 48–57 tahun, karena memiliki churn rate tertinggi.
-2. Tingkatkan engagement nasabah tidak aktif melalui promo, notifikasi, atau program loyalitas agar kembali aktif menggunakan layanan bank.
-3. Evaluasi strategi cross-selling pada nasabah yang memiliki 3 produk, karena kelompok ini menunjukkan churn rate yang sangat tinggi.
-4. Lakukan analisis lanjutan terhadap nasabah dengan 4 produk untuk memahami penyebab churn, mengingat seluruh nasabah pada segmen ini mengalami churn meskipun jumlah observasinya relatif sedikit.
+2. Tingkatkan ketertarikan nasabah tidak aktif melalui promo seperti diskon, cashback, atau bebas biaya transaksi tentunya ini dapat menarik minat pelanggan perempuan. Kemudian menyederhanakan aplikasi agar mudah digunakan terutama untuk usia 48-57 yang menjadi tingkat rentan churn.
+3. Mengevaluasi strategi pada nasabah yang memiliki 3 produk, karena churn rate kelompok ini sangat tinggi.
+4. Melakukan analisis lebih lanjut terhadap nasabah dengan 4 produk untuk memahami lebih dalam penyebab churn, meskipun seluruh nasabah pada kelompok ini mengalami churn dengan tingkat observasi paling sedikit.
 
 ## Tools 
-Microsoft Excel
+Microsoft Excel, Tableau
