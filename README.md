@@ -124,6 +124,7 @@ Smentara itu, kepemilikan 3 produk menunjukkan keterkaitan dengan churn rate yan
 
 ## Dashboard
 <img width="1095" height="708" alt="image" src="https://github.com/user-attachments/assets/a70e9d8a-22fb-46bd-a4b0-064c6640f648" />
+Dashboard Interaktif di [Tableau](https://public.tableau.com/app/profile/vika.ramadani/viz/shared/8XW82FZP5)
 
 ## Insight Utama
 Berdasarkan seluruh hasil analisis,  diperoleh beberapa karakteristik yang paling sering muncul pada segmen nasabah dengan churn rate tinggi, yaitu:
