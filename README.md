@@ -75,7 +75,7 @@ Pertanyaan analisis:
   <img width="1098" height="461" alt="image" src="https://github.com/user-attachments/assets/b7b07bbe-56bf-4489-a1ac-8758d835aa1f" />
   _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_
 
-  Berdasarkan hasil analisis, kategori saldo menunjukkan perbedaan churn rate, namun tidak membentuk pola yang konsisten. Nasabah dengan saldo rendah dan saldo tinggi sama-sama memiliki churn rate sebesar 26%, sedangkan nasabah tanpa saldo memiliki churn rate paling rendah (14%). Temuan ini mengindikasikan bahwa besarnya saldo rekening saja belum cukup untuk menjelaskan customer churn, sehingga kemungkinan terdapat faktor lain yang memiliki pengaruh lebih besar, seperti usia, status keaktifan, atau jumlah produk yang dimiliki.
+  Berdasarkan hasil analisis, kategori saldo menunjukkan perbedaan churn rate yang hampir homogen. Nasabah yang memiliki saldo baik itu kategori tinggi, sedang, rendah, maupun premium menunjukkan persentase yang hampir seragam dalam rentang 19% - 26%. Justru perbedaan terlihat pada nasabah yang tidak memiliki saldo dengan tingkat churn yang lebih rendah yaitu 14%. Maka temuan ini belum cukup menjelaskan pengaruh besarnya saldo rekening terhadap churn nasabah.
   
 * Bagaimana hubungan credit score dengan churn?
   <img width="1031" height="440" alt="image" src="https://github.com/user-attachments/assets/ee788988-fb95-441b-bdfb-34908e83e875" />
