@@ -75,13 +75,13 @@ Pertanyaan analisis:
   <img width="1098" height="461" alt="image" src="https://github.com/user-attachments/assets/b7b07bbe-56bf-4489-a1ac-8758d835aa1f" />
   _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_
 
-  Berdasarkan hasil analisis, kategori saldo menunjukkan perbedaan churn rate yang hampir homogen. Nasabah yang memiliki saldo baik itu kategori tinggi, sedang, rendah, maupun premium menunjukkan persentase yang hampir seragam dalam rentang 19% - 26%. Justru perbedaan terlihat pada nasabah yang tidak memiliki saldo dengan tingkat churn yang lebih rendah yaitu 14%. Maka temuan ini belum cukup menjelaskan pengaruh besarnya saldo rekening terhadap churn nasabah.
+  Berdasarkan hasil analisis, churn rate antar kategori saldo berada pada rentang 14%–26%. Meskipun terdapat perbedaan persentase antar kategori, tidak terlihat pola yang konsisten bahwa semakin besar atau semakin kecil saldo rekening akan diikuti oleh peningkatan churn. Nasabah dengan saldo rendah maupun saldo tinggi sama-sama memiliki churn rate tertinggi (26%), sedangkan nasabah tanpa saldo justru memiliki churn rate paling rendah (14%). Oleh karena itu, berdasarkan analisis deskriptif ini, besarnya saldo rekening belum menunjukkan hubungan yang jelas terhadap kecenderungan nasabah untuk melakukan churn.
   
 * Bagaimana hubungan credit score dengan churn?
   <img width="1031" height="440" alt="image" src="https://github.com/user-attachments/assets/ee788988-fb95-441b-bdfb-34908e83e875" />
    _**Persentase Churn = Total nasabah churn / Total Keseluruhan Nasabah** masing-masing kategori_.
   
-  Hasil menunjukkan perbandingan yang relatif merata atau tidak terlalu ekstrem antar kategori Skor kredit, dimana rata-rata kategori nasabah churn dalam rentang 20% - 24%, perbandingan selisih antar kategori skor kredit yaitu 4% mengindikasikan bahwa churn dalam kategori skor cenderung sama di setiap tingkatan. Oleh karena itu, dapat disimpulkan bahwa variabel skor kredit tidak begitu berpengaruh terhadap churn pelanggan.
+  Hasil analisis menunjukkan bahwa tingkat churn pada setiap kategori Credit Score relatif serupa, yaitu berada pada rentang 20%–24%. Selisih tertinggi antar kategori hanya sebesar 4 poin persentase sehingga tidak menunjukkan perbedaan yang signifikan. Hal ini mengindikasikan bahwa Credit Score bukan merupakan faktor yang memiliki hubungan kuat terhadap customer churn pada dataset ini.
 
 ### 4. Hubungan Nasabah dengan Bank
 Pertanyaan analisis:
@@ -115,12 +115,12 @@ Pertanyaan analisis:
 * Segmen nasabah mana yang memiliki tingkat churn tertinggi?
   <img width="586" height="177" alt="image" src="https://github.com/user-attachments/assets/f236305d-e202-4853-91fd-367d893bfd1e" />
   
-  Hasil tersebut menunjukkan bahwa nasabah pra-pensiun (48-57 tahun) di Germany, terutama perempuan, merupakan kelompok dengan tingkat churn yang relatif lebih tinggi dibandingkan segmen demografis lainnya.
+  Hasil segmentasi menunjukkan bahwa kelompok nasabah yang paling berisiko mengalami churn didominasi oleh nasabah yang berasal dari Germany, khususnya pada rentang usia 48–57 tahun. Segmen dengan churn rate tertinggi adalah perempuan usia 48–57 tahun di Germany dengan tingkat churn sebesar 72%, diikuti oleh laki-laki usia 48–57 tahun di Germany sebesar 67%. Temuan ini menunjukkan bahwa kombinasi karakteristik negara, usia, dan jenis kelamin dapat membantu bank mengidentifikasi kelompok pelanggan yang memerlukan perhatian lebih dalam strategi retensi.
+
 
   <img width="509" height="198" alt="image" src="https://github.com/user-attachments/assets/4ed8552f-321b-45aa-bb29-33821f61b2ab" />
   
-  Pada dataset ini, seluruh nasabah yang memiliki 4 produk tercatat mengalami churn. Namun, kelompok ini hanya terdiri dari 60 nasabah, sehingga hasil tersebut perlu diartikan secara hati-hati dan tidak dapat langsung disamaratakan.
-Smentara itu, kepemilikan 3 produk menunjukkan keterkaitan dengan churn rate yang sangat tinggi, terutama pada nasabah yang sudah tidak aktif.
+  Berdasarkan persentase churn, segmen nasabah tidak aktif dengan 4 produk memiliki tingkat churn tertinggi (100%), diikuti oleh nasabah tidak aktif dengan 3 produk (88%). Namun, kedua segmen tersebut memiliki jumlah nasabah yang relatif sedikit. Sementara itu, nasabah tidak aktif dengan 1 produk memiliki churn rate yang lebih rendah (37%), tetapi menyumbang jumlah churn terbesar, yaitu 924 nasabah. Hal ini menunjukkan bahwa evaluasi risiko churn sebaiknya mempertimbangkan persentase churn sekaligus jumlah nasabah pada setiap segmen agar prioritas strategi retensi lebih tepat sasaran.
 
 ## Dashboard
 <img width="1095" height="708" alt="image" src="https://github.com/user-attachments/assets/a70e9d8a-22fb-46bd-a4b0-064c6640f648" />
@@ -132,16 +132,16 @@ Berdasarkan seluruh hasil analisis,  diperoleh beberapa karakteristik yang palin
 1. Berasal dari Germany.
 2. Berusia 48–57 tahun (dengan kecenderungan churn yang masih tinggi pada kelompok 58–67 tahun).
 3. Didominasi oleh perempuan.
-4. Berstatus tidak aktif (Inactive Member).
-5. Memiliki 3 produk perbankan.
+4. **Nasabah yang tidak aktif** (Inactive Member) memiliki churn rate hampir dua kali lebih tinggi dibandingkan nasabah aktif, sehingga keaktifan menjadi salah satu faktor yang paling berkaitan dengan churn.
+5. Berdasarkan jumlah produk, nasabah dengan 3–4 produk menunjukkan churn rate yang sangat tinggi. Namun, jumlah nasabah pada kelompok tersebut relatif sedikit. Sebaliknya, nasabah tidak aktif dengan 1 produk menjadi penyumbang jumlah churn terbesar, sehingga segmen ini memiliki dampak bisnis yang lebih besar dan layak menjadi prioritas utama dalam strategi retensi pelanggan..
 
 Karakteristik tersebut dapat dijadikan dasar bagi bank untuk mengidentifikasi kelompok nasabah yang perlu diprioritaskan dalam program retensi pelanggan.
 
 ## Rekomendasi Bisnis
-1. Prioritaskan program retensi pada nasabah di Germany, khususnya perempuan berusia 48–57 tahun, karena memiliki churn rate tertinggi.
-2. Tingkatkan ketertarikan nasabah tidak aktif melalui promo seperti diskon, cashback, atau bebas biaya transaksi tentunya ini dapat menarik minat pelanggan perempuan. Kemudian menyederhanakan aplikasi agar mudah digunakan terutama untuk usia 48-57 yang menjadi tingkat rentan churn.
-3. Mengevaluasi strategi pada nasabah yang memiliki 3 produk, karena churn rate kelompok ini sangat tinggi.
-4. Melakukan analisis lebih lanjut terhadap nasabah dengan 4 produk untuk memahami lebih dalam penyebab churn, meskipun seluruh nasabah pada kelompok ini mengalami churn dengan tingkat observasi paling sedikit.
+1. Memprioritaskan program retensi pada nasabah di Germany, khususnya perempuan berusia 48–57 tahun, karena kelompok ini menunjukkan tingkat churn yang paling tinggi dibandingkan karakteristik lainnya.
+2. Meningkatkan engagement nasabah yang tidak aktif melalui promo personal, cashback, bebas biaya administrasi, maupun pengingat transaksi secara berkala agar nasabah kembali aktif menggunakan layanan bank.
+3. Memfokuskan strategi retensi pada nasabah tidak aktif dengan 1 produk, karena meskipun churn rate kelompok ini tidak setinggi segmen 3–4 produk, kelompok tersebut menyumbang jumlah nasabah churn terbesar sehingga berpotensi memberikan dampak bisnis paling signifikan apabila berhasil dipertahankan.
+4. Melakukan evaluasi terhadap nasabah yang memiliki 3–4 produk, karena kelompok ini memiliki churn rate yang sangat tinggi. Bank dapat melakukan analisis lebih lanjut terhadap kualitas layanan, kepuasan pelanggan, maupun kesesuaian produk untuk mengetahui penyebab tingginya tingkat churn pada segmen tersebut.
 
 ## Tools 
 Microsoft Excel, Tableau
